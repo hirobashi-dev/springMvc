@@ -20,8 +20,8 @@ public class ChengjidelDao {
 			String sql = "delete EXAM_RESULTS where STUDENT_ID=? and SUBJECT=?";
 			PreparedStatement  stmt = conn.prepareStatement(sql);
 			for (ChengjiImpl chengjiImpl : dellist) {
-				stmt.setInt(1, chengjiImpl.getSTUDENT_ID());
-				stmt.setString(2, chengjiImpl.getSUBJECT());
+				stmt.setInt(1, chengjiImpl.getStudent_id());
+				stmt.setString(2, chengjiImpl.getSubject());
 				rst=stmt.executeUpdate();
 
 				System.out.println(rst);

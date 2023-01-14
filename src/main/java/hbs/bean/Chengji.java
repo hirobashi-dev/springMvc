@@ -1,39 +1,19 @@
 package hbs.bean;
 
-public class Chengji {
-	int STUDENT_ID;
-	String SUBJECT;
-	int SCORE;
+import lombok.Data;
 
-	public Chengji(int sTUDENT_ID, String sUBJECT, int sCORE) {
-		STUDENT_ID = sTUDENT_ID;
-		SUBJECT = sUBJECT;
-		SCORE = sCORE;
-	}
+@Data
+public class Chengji {
+	private int student_id;
+	private String subject;
+	private int score;
+
 	public Chengji() {
 	}
-	public int getSTUDENT_ID() {
-		return STUDENT_ID;
+	public Chengji(int student_id, String subject, int score) {
+		this.student_id = student_id;
+		this.subject = subject;
+		this.score = score;
 	}
-	public void setSTUDENT_ID(int sTUDENT_ID) {
-		STUDENT_ID = sTUDENT_ID;
-	}
-	public String getSUBJECT() {
-		return SUBJECT;
-	}
-	public void setSUBJECT(String sUBJECT) {
-		SUBJECT = sUBJECT;
-	}
-	public int getSCORE() {
-		return SCORE;
-	}
-	public void setSCORE(int sCORE) {
-		SCORE = sCORE;
-	}
-	@Override
-	public String toString() {
-		return "Exresult [STUDENT_ID=" + STUDENT_ID + ", SUBJECT=" + SUBJECT + ", SCORE=" + SCORE + "]";
-	}
-
 
 }

@@ -21,10 +21,9 @@ public class RegisterDao {
 
 			PreparedStatement  stmt = conn.prepareStatement(sql);
 
-			stmt.setInt(1, chengji.getSTUDENT_ID());
-			stmt.setString(2, chengji.getSUBJECT());
-			stmt.setInt(3, chengji.getSCORE());
-
+			stmt.setInt(1, chengji.getStudent_id());
+			stmt.setString(2, chengji.getSubject());
+			stmt.setInt(3, chengji.getScore());
 			rset=stmt.executeUpdate();
 
 			stmt.close();

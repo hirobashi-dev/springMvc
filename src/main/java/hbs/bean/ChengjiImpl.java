@@ -1,52 +1,50 @@
 package hbs.bean;
 
 public class ChengjiImpl {
-	private int STUDENT_ID;//学生ID
-	private String  NAME;//学生名前
-	private String SUBJECT;//学科
-	private int SCORE;//成績
-	public ChengjiImpl(int sTUDENT_ID, String nAME, String sUBJECT, int sCORE) {
+	private int student_id;//学生id
+	private String  name;//学生名前
+	private String subject;//学科
+	private int score;//成績
+	public ChengjiImpl(int student_id, String name, String subject, int score) {
 		super();
-		STUDENT_ID = sTUDENT_ID;
-		NAME = nAME;
-		SUBJECT = sUBJECT;
-		SCORE = sCORE;
+		this.student_id = student_id;
+		this.name = name;
+		this.subject = subject;
+		this.score = score;
 	}
 	public ChengjiImpl() {
 		super();
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
-	public int getSTUDENT_ID() {
-		return STUDENT_ID;
+	public int getStudent_id() {
+		return student_id;
 	}
-	public void setSTUDENT_ID(int sTUDENT_ID) {
-		STUDENT_ID = sTUDENT_ID;
+	public void setStudent_id(int student_id) {
+		this.student_id = student_id;
 	}
-	public String getNAME() {
-		return NAME;
+	public String getName() {
+		return name;
 	}
-	public void setNAME(String nAME) {
-		NAME = nAME;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getSUBJECT() {
-		return SUBJECT;
+	public String getSubject() {
+		return subject;
 	}
-	public void setSUBJECT(String sUBJECT) {
-		SUBJECT = sUBJECT;
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
-	public int getSCORE() {
-		return SCORE;
+	public int getScore() {
+		return score;
 	}
-	public void setSCORE(int sCORE) {
-		SCORE = sCORE;
+	public void setScore(int score) {
+		this.score = score;
 	}
 	@Override
 	public String toString() {
-		return "ChengjiImpl [STUDENT_ID=" + STUDENT_ID + ", NAME=" + NAME + ", SUBJECT=" + SUBJECT + ", SCORE=" + SCORE
+		return "ChengjiImpl [student_id=" + student_id + ", name=" + name + ", subject=" + subject + ", score=" + score
 				+ "]";
 	}
-
-
 
 
 }
