@@ -17,15 +17,15 @@
 	<table border="1px">
 			<tr>
 				<td><label>学生ID：</label></td>
-				<td><input type="text" name="STUDENT_ID"></td>
+				<td><input type="text" name="student_id"></td>
 			</tr>
 			<tr>
 				<td><label>学科：</label></td>
-				<td><input type="text" name="SUBJECT"></td>
+				<td><input type="text" name="subject"></td>
 			</tr>
 			<tr>
 				<td><label>成績：</label></td>
-				<td><input type="text" name="SCORE"></td>
+				<td><input type="text" name="score"></td>
 			</tr>
 		</table>
 	<p>

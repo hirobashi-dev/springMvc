@@ -28,16 +28,16 @@
 		</tr>
 	</c:if>
 	<tr>
-		<td > <c:out value="${chengji.STUDENT_ID}" /></td>
-		<td ><c:out value="${chengji.NAME}" /></td>
-		<td ><c:out value="${chengji.SUBJECT}" /></td>
-		<td ><c:out value="${chengji.SCORE}" /></td>
+		<td > <c:out value="${chengji.student_id}" /></td>
+		<td ><c:out value="${chengji.name}" /></td>
+		<td ><c:out value="${chengji.subject}" /></td>
+		<td ><c:out value="${chengji.score}" /></td>
 		<td ><input type="checkbox" name="chenk" value="${status.index}"></td>
 	</tr>
-		<input type="hidden" name="STUDENT_ID" value="${chengji.STUDENT_ID}">
-		<input type="hidden" name="NAME" value="${chengji.NAME}">
-		<input type="hidden" name="SUBJECT" value="${chengji.SUBJECT}">
-		<input type="hidden" name="SCORE" value="${chengji.SCORE}">
+		<input type="hidden" name="STUDENT_ID" value="${chengji.student_id}">
+		<input type="hidden" name="NAME" value="${chengji.name}">
+		<input type="hidden" name="SUBJECT" value="${chengji.subject}">
+		<input type="hidden" name="SCORE" value="${chengji.score}">
 </c:forEach>
 </table>
 
